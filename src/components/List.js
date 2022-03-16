@@ -58,8 +58,8 @@ const List = () => {
 
         let value = window.prompt("What would you like to change it to? Old value: " + items[index][variable]);
         if (!value) return;
-        if (value == "deadline" && !value.match(/^(0[1-9]|1[0-2])\/(0[1-9]|[1-2][0-9]|3[0-1])\/[0-9]{4}$/)) return;
-        if (value == "priority" && !value.match(/^[1-4]$/)) return;
+        if (variable == "deadline" && !value.match(/^(0[1-9]|1[0-2])\/(0[1-9]|[1-2][0-9]|3[0-1])\/[0-9]{4}$/)) return;
+        if (variable == "priority" && !value.match(/^[1-4]$/)) return;
 
         // pop item from index and store it in variable item
         let item = items.splice(index, 1)[0];
