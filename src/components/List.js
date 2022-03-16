@@ -85,6 +85,7 @@ const List = () => {
     return (
         <SplitPane defaultSize='50%'>
             <div className="flex flex-col overflow-auto h-full">
+            <h3 className="p-2 m-2"><b>To-do</b></h3>
                 <button className="bg-red-500 rounded-md hover:bg-red-700 p-2 m-2" onClick={() => addItem()}>Add To-do</button>
                 {items.map((item, index) =>
                     <div className="p-2">
